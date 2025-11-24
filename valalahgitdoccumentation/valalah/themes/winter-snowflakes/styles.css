@@ -1,0 +1,73 @@
+/* Winter Snowflakes Theme - Valalah */
+
+.snowflake {
+  position: fixed;
+  top: -10px;
+  color: white;
+  font-size: 1.5rem;
+  pointer-events: none;
+  z-index: 9999;
+  user-select: none;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.8);
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-10px) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Snowflake variants for visual diversity */
+.snowflake:nth-child(odd) {
+  animation-duration: 8s;
+}
+
+.snowflake:nth-child(even) {
+  animation-duration: 12s;
+}
+
+.snowflake:nth-child(3n) {
+  animation-duration: 10s;
+  font-size: 1rem;
+}
+
+.snowflake:nth-child(4n) {
+  font-size: 2rem;
+}
+
+/* Subtle drift animation */
+@keyframes drift {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(30px);
+  }
+}
+
+.snowflake {
+  animation: fall linear infinite, drift 3s ease-in-out infinite;
+}
+
+/* Mobile optimization */
+@media (max-width: 768px) {
+  .snowflake {
+    font-size: 1rem;
+  }
+  
+  .snowflake:nth-child(4n) {
+    font-size: 1.5rem;
+  }
+}

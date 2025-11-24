@@ -1,0 +1,25 @@
+{
+  "name": "Winter Snowflakes",
+  "slug": "winter-snowflakes",
+  "description": "Gentle falling snowflakes with subtle rotation. Perfect for winter and Christmas.",
+  "author": "Valalah Team",
+  "version": "1.0.0",
+  "pricePerUseCents": 10,
+  "tags": ["winter", "christmas", "snow", "animated", "seasonal"],
+  "files": {
+    "css": "styles.css",
+    "js": "effects.js",
+    "audio": null,
+    "preview": "preview.png"
+  },
+  "performance": {
+    "maxParticles": 30,
+    "particleInterval": 300,
+    "mobileMaxParticles": 15
+  },
+  "colors": {
+    "primary": "#ffffff",
+    "secondary": "#e0f2ff",
+    "accent": "#93c5fd"
+  }
+}

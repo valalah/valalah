@@ -1,0 +1,90 @@
+/* Autumn Leaves Theme - Valalah */
+
+.autumn-leaf {
+  position: fixed;
+  top: -20px;
+  font-size: 2rem;
+  pointer-events: none;
+  z-index: 9999;
+  user-select: none;
+  animation: fall-spin linear infinite;
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.2));
+}
+
+@keyframes fall-spin {
+  0% {
+    transform: translateY(-20px) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(100vh) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+/* Swaying motion */
+@keyframes sway {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-20px);
+  }
+  75% {
+    transform: translateX(20px);
+  }
+}
+
+.autumn-leaf {
+  animation: fall-spin linear infinite, sway 3s ease-in-out infinite;
+}
+
+/* Color variations */
+.autumn-leaf.orange {
+  color: #ff6b35;
+}
+
+.autumn-leaf.red {
+  color: #dc143c;
+}
+
+.autumn-leaf.yellow {
+  color: #ffa500;
+}
+
+.autumn-leaf.brown {
+  color: #8b4513;
+}
+
+/* Size variations */
+.autumn-leaf:nth-child(odd) {
+  font-size: 1.5rem;
+  animation-duration: 10s, 4s;
+}
+
+.autumn-leaf:nth-child(even) {
+  font-size: 2.5rem;
+  animation-duration: 14s, 3s;
+}
+
+.autumn-leaf:nth-child(3n) {
+  font-size: 1.8rem;
+  animation-duration: 12s, 3.5s;
+}
+
+/* Mobile optimization */
+@media (max-width: 768px) {
+  .autumn-leaf {
+    font-size: 1.5rem;
+  }
+  
+  .autumn-leaf:nth-child(even) {
+    font-size: 2rem;
+  }
+}

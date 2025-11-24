@@ -1,0 +1,25 @@
+{
+  "name": "Autumn Leaves",
+  "slug": "autumn-leaves",
+  "description": "Colorful autumn leaves falling and spinning. Perfect for fall season.",
+  "author": "Valalah Team",
+  "version": "1.0.0",
+  "pricePerUseCents": 10,
+  "tags": ["autumn", "fall", "leaves", "animated", "seasonal"],
+  "files": {
+    "css": "styles.css",
+    "js": "effects.js",
+    "audio": null,
+    "preview": "preview.png"
+  },
+  "performance": {
+    "maxParticles": 25,
+    "particleInterval": 400,
+    "mobileMaxParticles": 12
+  },
+  "colors": {
+    "primary": "#ff6b35",
+    "secondary": "#ffa500",
+    "accent": "#8b4513"
+  }
+}

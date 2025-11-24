@@ -1,0 +1,25 @@
+{
+  "name": "Easter Eggs",
+  "slug": "easter-eggs",
+  "description": "Colorful falling eggs with chocolate crunch sound. Perfect for Easter celebrations.",
+  "author": "Valalah Team",
+  "version": "1.0.0",
+  "pricePerUseCents": 10,
+  "tags": ["easter", "eggs", "chocolate", "animated", "seasonal", "audio"],
+  "files": {
+    "css": "styles.css",
+    "js": "effects.js",
+    "audio": "audio.wav",
+    "preview": "preview.png"
+  },
+  "performance": {
+    "maxParticles": 20,
+    "particleInterval": 500,
+    "mobileMaxParticles": 10
+  },
+  "colors": {
+    "primary": "#ff69b4",
+    "secondary": "#87ceeb",
+    "accent": "#ffd700"
+  }
+}

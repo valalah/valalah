@@ -1,0 +1,24 @@
+{
+  "name": "Summer Glow",
+  "slug": "summer-glow",
+  "description": "A golden halo following your cursor. Perfect for summer vibes.",
+  "author": "Valalah Team",
+  "version": "1.0.0",
+  "pricePerUseCents": 10,
+  "tags": ["summer", "glow", "interactive", "cursor", "light"],
+  "files": {
+    "css": "styles.css",
+    "js": "effects.js",
+    "audio": null,
+    "preview": "preview.png"
+  },
+  "performance": {
+    "maxTrailLength": 15,
+    "updateInterval": 16
+  },
+  "colors": {
+    "primary": "#fbbf24",
+    "secondary": "#f59e0b",
+    "accent": "#fef3c7"
+  }
+}
